@@ -1,5 +1,5 @@
-Appointment Grails Plugin for the National Children's Study
-Copyright (C) 2010  Aaron J. Zirbes
+Nutrient Data Grails Plugin
+Copyright (C) 2012  Aaron S. Timbo
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -10,11 +10,6 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Environmental Health Sciences, 
-University of Minnesota, 200 Oak St SE Ste 350, Minneapolis, MN 55455-2008 USA.
-
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
