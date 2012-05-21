@@ -12,6 +12,7 @@ package gov.usda.sr23
  *
  */
 class Food {
+	String id
 	String longDescription
 	String shortDescription
 	String commonName
@@ -32,6 +33,7 @@ class Food {
 	static hasMany = [ weights: Weight, nutrients: NutrientData ]
 	
     static constraints = {
+		id(maxSize:5)
 		longDescription(maxSize:200)
 		shortDescription(maxSize:60)
 		commonName(nullable:true,maxSize:100)
@@ -50,8 +52,9 @@ class Food {
 		table 'FOOD_DES'
 		version false
 		cache usage:'read-only'
-		id generator: 'assigned', column: "NDB_No", sqlType: "VARCHAR(5)"
+		id generator: 'assigned', column: "id", type: "string",sqlType: "VARCHAR(5)"
 
+		id column: "NDB_No"
 		foodGroup column: "FdGrp_Cd", sqlType: "VARCHAR(4)"
 		longDescription column: "Long_Desc"
 		shortDescription column: "Short_Desc"

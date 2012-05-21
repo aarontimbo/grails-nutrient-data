@@ -6,10 +6,12 @@ package gov.usda.sr23
  * in SR23 and their descriptions.
  */
 class FoodGroupDescription {
+	String id
 	String description
 	
     static constraints = {
-		description(maxSize:60)
+		id maxSize: 4
+		description maxSize: 60
     }
 
 	String toString() { description }
@@ -20,8 +22,9 @@ class FoodGroupDescription {
 		table 'FD_GROUP'
 		version false
 		cache usage:'read-only'
-		id generator: 'assigned', column: 'FdGrp_Cd', sqlType: 'VARCHAR(4)'
+		id generator: 'assigned', column: 'id', type: 'string', sqlType: 'VARCHAR(4)'
 		
+		id column: "FdGrp_Cd"
 		description column: "FdGrp_Desc"
 	}
 }
