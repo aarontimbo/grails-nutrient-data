@@ -52,9 +52,8 @@ class Food {
 		table 'FOOD_DES'
 		version false
 		cache usage:'read-only'
-		id generator: 'assigned', column: "id", type: "string",sqlType: "VARCHAR(5)"
+		id generator: 'assigned', name:"id", column: "NDB_No", type: "string",sqlType: "VARCHAR(5)"
 
-		id column: "NDB_No"
 		foodGroup column: "FdGrp_Cd", sqlType: "VARCHAR(4)"
 		longDescription column: "Long_Desc"
 		shortDescription column: "Short_Desc"
